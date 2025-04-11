@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventEase | Plan Your Event</title>
+  <link rel="stylesheet" href="Plan Event.css" />
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+  <div class="cursor"></div>
+
+  <header class="glass hero fade-in">
+    <h1 class="logo">EventEase</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Events.html">Events</a></li>
+        <li><a href="PlanEvent.html">Plan Event</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="glass form-container fade-in">
+    <h2 class="glow-word">Plan Your Event</h2>
+    <form>
+      <div class="form-group">
+        <input type="text" id="name" required />
+        <label for="name">Your Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" required />
+        <label for="email">Email</label>
+      </div>
+
+      <div class="form-group">
+        <textarea id="details" rows="4" required></textarea>
+        <label for="details">Event Details</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="notification" id="submissionAlert">Submitted successfully!</div>
+  </section>
+
+  <script src="Plan Event.js"></script>
+</body>
+</html>

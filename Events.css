@@ -1,0 +1,141 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Custom Cursor */
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #00fff7;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transition: transform 0.1s ease;
+  z-index: 1000;
+  box-shadow: 0 0 15px #00fff7, 0 0 30px #00fff7;
+}
+
+/* Glowing Heading */
+.glow-word {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 8px #00fff7, 0 0 12px #00fff7;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+/* Glassmorphism Container */
+.glass {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 60px auto;
+  padding: 40px;
+  max-width: 600px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+  gap: 40px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #00fff7;
+}
+
+/* Logo */
+.logo {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #00fff7;
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* Dropdown Label */
+.dropdown-label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: white;
+}
+
+/* Custom Dropdown */
+select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  border: 1px solid #00fff7;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+select:hover,
+select:focus {
+  border: 1px solid #00fff7;
+  box-shadow: 0 0 8px rgba(0, 255, 247, 0.3);
+}
+
+option {
+  background-color: #2c5364;
+  color: white;
+}
+
+optgroup {
+  color: #00fff7;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 255, 247, 0.2);
+  padding-bottom: 4px;
+}
+
+/* Slide-in Animation */
+.slide-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideIn 1.2s ease-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  

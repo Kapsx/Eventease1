@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EventEase | Events</title>
+  <link rel="stylesheet" href="Events.css" />
+</head>
+<body>
+  <!-- Particle Background -->
+  <canvas id="particle-canvas" style="position:fixed; top:0; left:0; z-index:-1;"></canvas>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Header -->
+  <header class="glass hero">
+    <h1 class="logo">EventEase</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Events.html">Events</a></li>
+        <li><a href="Plan Event.html">Plan Event</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Event Type Selector -->
+  <section class="glass slide-in-section">
+    <h2 class="glow-word">Choose Your Event Type</h2>
+    
+    <form>
+      <label for="eventType" class="dropdown-label">Event Type</label>
+      <div class="custom-dropdown">
+        <select id="eventType" name="eventType" size="16" multiple>
+          <optgroup label="Internal / Team Events" class="opt-label">
+            <option value="teamMeeting">Team Meeting</option>
+            <option value="recreation">Recreation Activity</option>
+            <option value="corporateTraining">Corporate Training</option>
+            <option value="workshop">Workshop</option>
+            <option value="teamBuilding">Team Building</option>
+            <option value="onboarding">Onboarding Program</option>
+          </optgroup>
+          <optgroup label="Company-Wide" class="opt-label">
+            <option value="agm">Annual General Meeting</option>
+            <option value="townhall">Quarterly Town Hall</option>
+            <option value="milestone">Milestone Celebration</option>
+            <option value="hackathon">Internal Hackathon</option>
+            <option value="productLaunch">Product Launch</option>
+          </optgroup>
+          <optgroup label="External / Hybrid" class="opt-label">
+            <option value="clientMeeting">Client / Stakeholder Meeting</option>
+            <option value="networking">Networking Event</option>
+            <option value="recruitment">Recruitment Drive</option>
+            <option value="csr">CSR Initiative</option>
+            <option value="webinar">Webinar / Panel</option>
+            <option value="conference">Conference</option>
+          </optgroup>
+          <optgroup label="Social / Appreciation" class="opt-label">
+            <option value="appreciation">Appreciation Day</option>
+            <option value="holidayParty">Holiday / Festival Party</option>
+            <option value="birthday">Birthday Celebration</option>
+            <option value="farewell">Farewell / Retirement</option>
+            <option value="award">Award Ceremony</option>
+          </optgroup>
+        </select>
+      </div>
+    </form>
+  </section>
+
+  <script src="Events.js"></script>
+</body>
+</html>
+

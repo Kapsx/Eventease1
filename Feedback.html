@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EventEase | Feedback</title>
+  <link rel="stylesheet" href="Feedback.css" />
+</head>
+<body>
+  <!-- Canvas for moving green grid -->
+  <canvas id="grid-canvas"></canvas>
+
+  <!-- Cursor block -->
+  <div class="cursor-trail"></div>
+
+  <!-- Back to home -->
+  <a href="index.html" class="back-home">← Back to Home</a>
+
+  <!-- Feedback Box -->
+  <div class="feedback-box glass glitch-in">
+    <h1>FEEDBACK</h1>
+    <form id="feedback-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Feedback" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="feedback-msg"></div>
+  </div>
+
+  <audio id="glitch-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-retro-game-notification-212.wav"></audio>
+  <script src="Feedback.js"></script>
+</body>
+</html>
+
+
+<div class="feedback-form-container glass">
+    <h2 align="center">Send Us Your Feedback</h2>
+    <form>
+      <!-- your form fields here -->
+    </form>
+  </div>
+  
